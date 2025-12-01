@@ -377,12 +377,12 @@ textarea.is-invalid {
 
 .contact-wrapper {
     display: flex;
-    justify-content: center;     /* centers horizontally */
-    align-items: flex-start;     /* keeps top-aligned */
+    justify-content: center;     
+    align-items: flex-start;     
     gap: 40px;
-    max-width: 900px;
-    margin: 0 300px;              /* centers the whole block */
+    margin: 0 300px;              
     padding: 20px;
+    border-left: 0;
 }
 
 .contact-info h3 {
@@ -399,10 +399,6 @@ textarea.is-invalid {
 .contact-form, 
 .contact-info {
     flex: 1;
-}
-
-.contact-wrapper {
-    border-left: 0; /* reset */
 }
 
 .contact-form {
