@@ -42,17 +42,18 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 }
 );
 
+// filter rules for the filter buttons to work
 function filterProducts(category) {
-    const cards = document.querySelectorAll('.card'); // select all cards
+    const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
         const cardCategory = card.getAttribute('data-category');
-        const parentCol = card.parentElement; // column div
+        const parentCol = card.parentElement; 
 
         if (category === 'all' || cardCategory === category) {
-            parentCol.style.display = 'block'; // show column
+            parentCol.style.display = 'block'; 
         } else {
-            parentCol.style.display = 'none';  // hide column
+            parentCol.style.display = 'none';  
         }
     });
 }
